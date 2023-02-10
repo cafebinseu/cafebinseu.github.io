@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Vince</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Café Vince</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="merchandise.html">MERCHANDISE</a></li>
+        <li><a href="about.html">ABOUT </a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"> CONTACT US </div>
+  <div class="about">
+    <div class="content">
+      <div class="title">Contact Us</div>
+      <p>Here is our Social Media Accounts:</p>
+      <p><i class='fa fa-facebook'> </i> Facebook: <a href="https://www.facebook.com/lMTNl.AkumaDesu/">Café Vince Official </a></p>
+      <p><i class='fa fa-facebook'> </i>  Facebook Page: <a href="https://www.facebook.com/profile.php?id=100090270067272"> Café Vince Official </a> </p>
+      <p><i class='fa fa-instagram'> </i> Instagram: <a href="https://www.instagram.com/binseu.seutibeun/?hl=en"> @ItsCafé VincePH </a></p>
+      <p><i class='fa fa-twitter'> </i> Twitter: <a href="https://twitter.com/Cafe_VincePH"> @Cafe_VincePH </a> </p>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p> © 2023 Café Vince. All rights reserved.</p>
+    </div>
+    <div>
+      <p>
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>  
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
