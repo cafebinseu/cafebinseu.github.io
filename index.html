@@ -1,76 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Vince</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/wave.gif" type="image/x-icon">
+    <title>Flowers By Rifki Romadhan</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="content">
-      <div class="logo">
-        <a href="#">Café Vince</a>
-      </div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <li><a href="#">HOME</a></li>
-        <li><a href="menu.html">MENU</a></li>
-        <li><a href="merchandise.html">MERCHANDISE</a></li>
-        <li><a href="about.html">ABOUT </a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-  <div class="banner">  CAFÈ VINCE </div> 
-  <div class="about">
-    <div class="content">
-      <div class="title">Café Vince - We never burn anything by design unless to make it delicious.</div>
-      <p>We create unique experiences that change lives and bring people back.</p>
-      <p>While our company has grown, we have stayed true to our original vision – to be a coffeehouse with good food. We’re on a mission to make people feel good and to make feel at home.</p>
-      <p>To say Café Vince purchases and roasts high-quality whole bean coffee is very true. That's the essence of what we do.</p>
-      <p>The Café Vince Mission Statement is more than words on a piece of paper - it's the philosophy that guides how we do business every day.</p>
-      
-    </div>
-  </div>
 
-  <footer>
-    <div>
-      <p> © 2023 Café Vince. All rights reserved.</p>
+    <div class="caption">
+        <h1>Hi, Yza  <span>hadiah</span> <br> buat <span>kamu</span> nih</h1>
+        <p>Klik tombol dibawah ya buat mengetahui hadiahnya yaa 😊</p>
+        <a href="flower.html">Click me 😊</a>
     </div>
-    <div>
-      <p>
-        <a href="#">Terms of Use</a> | 
-        <a href="#">Privacy Policy</a>
-      </p>
-    </div>
-  </footer>  
-
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-  </script>
+    <img src="img/wave.gif" alt="img sapa">
 </body>
 </html>
